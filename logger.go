@@ -25,7 +25,7 @@ func init() {
 	filePathMap = make(map[string]*os.File)
 }
 
-func newLogger() *Logger {
+func NewLogger() *Logger {
 	return &Logger{
 		Logger:  log.New(os.Stderr, "", log.LstdFlags),
 		logPath: "",
